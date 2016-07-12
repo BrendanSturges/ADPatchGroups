@@ -48,7 +48,7 @@ namespace ADPatchGroups
         {
 
             try{
-                DirectoryEntry entry = new DirectoryEntry("LDAP://devgac.gulfaero.com");
+                DirectoryEntry entry = new DirectoryEntry("LDAP://");
                 DirectorySearcher searcher = new DirectorySearcher(entry);
 
                 searcher.Filter = "(&(objectCategory=computer)(name=" + systemName + "))";
@@ -58,7 +58,7 @@ namespace ADPatchGroups
             }
 
             catch{
-                DirectoryEntry entry = new DirectoryEntry("LDAP://gac.gulfaero.com");
+                DirectoryEntry entry = new DirectoryEntry("LDAP://");
                 DirectorySearcher searcher = new DirectorySearcher(entry);
 
                 searcher.Filter = "(&(objectCategory=computer)(name=" + systemName + "))";
@@ -73,7 +73,7 @@ namespace ADPatchGroups
         public string getCurrentOwner(string systemName)
         {
             try {
-                DirectoryEntry entry = new DirectoryEntry("LDAP://devgac.gulfaero.com");
+                DirectoryEntry entry = new DirectoryEntry("LDAP://");
                 DirectorySearcher searcher = new DirectorySearcher(entry);
 
                 searcher.Filter = "(&(objectCategory=computer)(name=" + systemName + "))";
@@ -84,7 +84,7 @@ namespace ADPatchGroups
 
             catch
             {
-                DirectoryEntry entry = new DirectoryEntry("LDAP://gac.gulfaero.com");
+                DirectoryEntry entry = new DirectoryEntry("LDAP://");
                 DirectorySearcher searcher = new DirectorySearcher(entry);
 
                 searcher.Filter = "(&(objectCategory=computer)(name=" + systemName + "))";
