@@ -34,7 +34,7 @@
                     <GridViewColumn Header="New Patch Group">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <ComboBox ItemsSource="{Binding NewPatchGroup}" Width="135"/>
+                                <ComboBox ItemsSource="{Binding NewPatchGroup}" Width="135" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
